@@ -1,0 +1,198 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+ *.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+Weather/Podfile
+Weather/Podfile.lock
+Weather/Pods/Manifest.lock
+Weather/Pods/Alamofire/LICENSE
+Weather/Pods/Alamofire/README.md
+Weather/Pods/Alamofire/Source/AFError.swift
+Weather/Pods/Alamofire/Source/Alamofire.swift
+Weather/Pods/Alamofire/Source/AlamofireExtended.swift
+Weather/Pods/Alamofire/Source/AuthenticationInterceptor.swift
+Weather/Pods/Alamofire/Source/CachedResponseHandler.swift
+Weather/Pods/Alamofire/Source/Combine.swift
+Weather/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+Weather/Pods/Alamofire/Source/EventMonitor.swift
+Weather/Pods/Alamofire/Source/HTTPHeaders.swift
+Weather/Pods/Alamofire/Source/HTTPMethod.swift
+Weather/Pods/Alamofire/Source/MultipartFormData.swift
+Weather/Pods/Alamofire/Source/MultipartUpload.swift
+Weather/Pods/Alamofire/Source/NetworkReachabilityManager.swift
+Weather/Pods/Alamofire/Source/Notifications.swift
+Weather/Pods/Alamofire/Source/OperationQueue+Alamofire.swift
+Weather/Pods/Alamofire/Source/ParameterEncoder.swift
+Weather/Pods/Alamofire/Source/ParameterEncoding.swift
+Weather/Pods/Alamofire/Source/Protected.swift
+Weather/Pods/Alamofire/Source/RedirectHandler.swift
+Weather/Pods/Alamofire/Source/Request.swift
+Weather/Pods/Alamofire/Source/RequestInterceptor.swift
+Weather/Pods/Alamofire/Source/RequestTaskMap.swift
+Weather/Pods/Alamofire/Source/Response.swift
+Weather/Pods/Alamofire/Source/ResponseSerialization.swift
+Weather/Pods/Alamofire/Source/Result+Alamofire.swift
+Weather/Pods/Alamofire/Source/RetryPolicy.swift
+Weather/Pods/Alamofire/Source/ServerTrustEvaluation.swift
+Weather/Pods/Alamofire/Source/Session.swift
+Weather/Pods/Alamofire/Source/SessionDelegate.swift
+Weather/Pods/Alamofire/Source/StringEncoding+Alamofire.swift
+Weather/Pods/Alamofire/Source/URLConvertible+URLRequestConvertible.swift
+Weather/Pods/Alamofire/Source/URLEncodedFormEncoder.swift
+Weather/Pods/Alamofire/Source/URLRequest+Alamofire.swift
+Weather/Pods/Alamofire/Source/URLSessionConfiguration+Alamofire.swift
+Weather/Pods/Alamofire/Source/Validation.swift
+Weather/Pods/Pods.xcodeproj/project.pbxproj
+Weather/Pods/SnapKit/LICENSE
+Weather/Pods/SnapKit/README.md
+Weather/Pods/SnapKit/Source/Constraint.swift
+Weather/Pods/SnapKit/Source/ConstraintAttributes.swift
+Weather/Pods/SnapKit/Source/ConstraintConfig.swift
+Weather/Pods/SnapKit/Source/ConstraintConstantTarget.swift
+Weather/Pods/SnapKit/Source/ConstraintDescription.swift
+Weather/Pods/SnapKit/Source/ConstraintDirectionalInsets.swift
+Weather/Pods/SnapKit/Source/ConstraintDirectionalInsetTarget.swift
+Weather/Pods/SnapKit/Source/ConstraintDSL.swift
+Weather/Pods/SnapKit/Source/ConstraintInsets.swift
+Weather/Pods/SnapKit/Source/ConstraintInsetTarget.swift
+Weather/Pods/SnapKit/Source/ConstraintItem.swift
+Weather/Pods/SnapKit/Source/ConstraintLayoutGuide+Extensions.swift
+Weather/Pods/SnapKit/Source/ConstraintLayoutGuide.swift
+Weather/Pods/SnapKit/Source/ConstraintLayoutGuideDSL.swift
+Weather/Pods/SnapKit/Source/ConstraintLayoutSupport.swift
+Weather/Pods/SnapKit/Source/ConstraintLayoutSupportDSL.swift
+Weather/Pods/SnapKit/Source/ConstraintMaker.swift
+Weather/Pods/SnapKit/Source/ConstraintMakerEditable.swift
+Weather/Pods/SnapKit/Source/ConstraintMakerExtendable.swift
+Weather/Pods/SnapKit/Source/ConstraintMakerFinalizable.swift
+Weather/Pods/SnapKit/Source/ConstraintMakerPriortizable.swift
+Weather/Pods/SnapKit/Source/ConstraintMakerRelatable.swift
+Weather/Pods/SnapKit/Source/ConstraintMultiplierTarget.swift
+Weather/Pods/SnapKit/Source/ConstraintOffsetTarget.swift
+Weather/Pods/SnapKit/Source/ConstraintPriority.swift
+Weather/Pods/SnapKit/Source/ConstraintPriorityTarget.swift
+Weather/Pods/SnapKit/Source/ConstraintRelatableTarget.swift
+Weather/Pods/SnapKit/Source/ConstraintRelation.swift
+Weather/Pods/SnapKit/Source/ConstraintView+Extensions.swift
+Weather/Weather.xcworkspace/contents.xcworkspacedata
+Weather/Weather.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Weather/Pods/SnapKit/Source/ConstraintView.swift
+Weather/Pods/SnapKit/Source/ConstraintViewDSL.swift
+Weather/Pods/SnapKit/Source/Debugging.swift
+Weather/Pods/SnapKit/Source/LayoutConstraint.swift
+Weather/Pods/SnapKit/Source/LayoutConstraintItem.swift
+Weather/Pods/SnapKit/Source/Typealiases.swift
+Weather/Pods/SnapKit/Source/UILayoutSupport+Extensions.swift
+Weather/Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+Weather/Pods/Target Support Files/Alamofire/Alamofire-Info.plist
+Weather/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+Weather/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+Weather/Pods/Target Support Files/Alamofire/Alamofire.debug.xcconfig
+Weather/Pods/Target Support Files/Alamofire/Alamofire.modulemap
+Weather/Pods/Target Support Files/Alamofire/Alamofire.release.xcconfig
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-acknowledgements.markdown
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-acknowledgements.plist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-dummy.m
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks-Debug-input-files.xcfilelist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks-Debug-output-files.xcfilelist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks-Release-input-files.xcfilelist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks-Release-output-files.xcfilelist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks.sh
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-Info.plist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-umbrella.h
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather.modulemap
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig
+Weather/Pods/Target Support Files/SnapKit/SnapKit-dummy.m
+Weather/Pods/Target Support Files/SnapKit/SnapKit-Info.plist
+Weather/Pods/Target Support Files/SnapKit/SnapKit-prefix.pch
+Weather/Pods/Target Support Files/SnapKit/SnapKit-umbrella.h
+Weather/Pods/Target Support Files/SnapKit/SnapKit.debug.xcconfig
+Weather/Pods/Target Support Files/SnapKit/SnapKit.modulemap
+Weather/Pods/Target Support Files/SnapKit/SnapKit.release.xcconfig
