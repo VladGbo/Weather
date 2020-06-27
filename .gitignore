@@ -88,7 +88,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
-Weather/Podfile
 Weather/Podfile.lock
 Weather/Pods/Manifest.lock
 Weather/Pods/Alamofire/LICENSE
