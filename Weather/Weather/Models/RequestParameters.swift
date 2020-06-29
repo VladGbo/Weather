@@ -7,7 +7,12 @@
 //
 
 import Foundation
+import Alamofire
 
 struct RequestParameters {
-    <#fields#>
+    let url: URLConvertible
+    let method: HTTPMethod
+    var parameters: Parameters?
+    var header: HTTPHeaders?
+    
 }
