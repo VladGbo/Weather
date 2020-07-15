@@ -17,7 +17,7 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        view.backgroundColor = UIColor.fetch(color: .darkBlue)
         
         setup()
         configure()
@@ -37,12 +37,14 @@ class SearchViewController: UIViewController {
             make.width.equalTo(view)
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
         }
+        searchBar.barTintColor = UIColor.fetch(color: .darkBlue)
         
         view.setup(subView: citiesTableView) { (make) in
             make.top.equalTo(searchBar.snp.bottom)
             make.left.right.bottom.equalTo(view)
         }
         
+        citiesTableView.backgroundColor = .white
     }
 }
 
@@ -54,7 +56,21 @@ extension SearchViewController: SearchViewModelDelegate {
 }
 
 extension SearchViewController: TableViewModelDelegate {
-
+    func didPressedCell(city: City) {
+        NetworkService.fetchWeather(city: city, forecast: .hourly, complition: { (result) in
+            switch result {
+            case .success(let res):
+                let vc = WeatherViewController()
+                vc.weather = res
+                vc.city = city
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true, completion: nil)
+            case .error(let err):
+                self.showInfo(with: err)
+            }
+        })
+    }
+    
     var dataSource: [City] {
         return searchVM.fetchCities() ?? [City]()
     }

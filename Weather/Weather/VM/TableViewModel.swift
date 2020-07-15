@@ -10,6 +10,7 @@ import UIKit
 
 protocol TableViewModelDelegate: class {
     var dataSource: [City] { get }
+    func didPressedCell(city: City)
 }
 
 class TableViewModel: NSObject {
@@ -32,6 +33,12 @@ extension TableViewModel: UITableViewDelegate, UITableViewDataSource {
         } else {
             return UITableViewCell()
         }
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   didSelectRowAt indexPath: IndexPath) {
+        guard let city = delegate?.dataSource[indexPath.row] else {return}
+        delegate?.didPressedCell(city: city)
     }
 }
 
