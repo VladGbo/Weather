@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		D2A845E928B0144E0089EA47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A845E828B0144E0089EA47 /* AppDelegate.swift */; };
-		D2A845EB28B0144E0089EA47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A845EA28B0144E0089EA47 /* SceneDelegate.swift */; };
-		D2A845ED28B0144E0089EA47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A845EC28B0144E0089EA47 /* ViewController.swift */; };
-		D2A845F028B0144E0089EA47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A845EE28B0144E0089EA47 /* Main.storyboard */; };
 		D2A845F228B0144E0089EA47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A845F128B0144E0089EA47 /* Assets.xcassets */; };
 		D2A845F528B0144E0089EA47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A845F328B0144E0089EA47 /* LaunchScreen.storyboard */; };
+		D2A8460128B0DBA20089EA47 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8460028B0DBA20089EA47 /* BaseViewController.swift */; };
+		D2A8460428B0DC7D0089EA47 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8460328B0DC7D0089EA47 /* BaseView.swift */; };
+		D2A8460628B0E5E00089EA47 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8460528B0E5E00089EA47 /* BaseViewModel.swift */; };
+		D2A8460B28B0F4C70089EA47 /* ProxyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8460A28B0F4C70089EA47 /* ProxyModule.swift */; };
+		D2A8461028B10B670089EA47 /* ProxyLounchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8460F28B10B670089EA47 /* ProxyLounchViewModel.swift */; };
+		D2A8461228B12FC80089EA47 /* ProxyLounchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8461128B12FC80089EA47 /* ProxyLounchRouter.swift */; };
+		D2A8461428B140DC0089EA47 /* ProxyLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8461328B140DC0089EA47 /* ProxyLaunchController.swift */; };
+		D2A8461628B141480089EA47 /* ProxyLaunchControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8461528B141480089EA47 /* ProxyLaunchControllerView.swift */; };
+		D2A8461828B142FF0089EA47 /* ProxyLaunchControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A8461728B142FF0089EA47 /* ProxyLaunchControllerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D2A845E528B0144E0089EA47 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A845E828B0144E0089EA47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2A845EA28B0144E0089EA47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2A845EC28B0144E0089EA47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2A845EF28B0144E0089EA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2A845F128B0144E0089EA47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2A845F428B0144E0089EA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A845F628B0144E0089EA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A8460028B0DBA20089EA47 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D2A8460328B0DC7D0089EA47 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		D2A8460528B0E5E00089EA47 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		D2A8460A28B0F4C70089EA47 /* ProxyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyModule.swift; sourceTree = "<group>"; };
+		D2A8460F28B10B670089EA47 /* ProxyLounchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyLounchViewModel.swift; sourceTree = "<group>"; };
+		D2A8461128B12FC80089EA47 /* ProxyLounchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyLounchRouter.swift; sourceTree = "<group>"; };
+		D2A8461328B140DC0089EA47 /* ProxyLaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyLaunchController.swift; sourceTree = "<group>"; };
+		D2A8461528B141480089EA47 /* ProxyLaunchControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyLaunchControllerView.swift; sourceTree = "<group>"; };
+		D2A8461728B142FF0089EA47 /* ProxyLaunchControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProxyLaunchControllerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +52,7 @@
 		D2A845DC28B0144E0089EA47 = {
 			isa = PBXGroup;
 			children = (
-				D2A845E728B0144E0089EA47 /* Weather */,
+				D2A845E728B0144E0089EA47 /* Project */,
 				D2A845E628B0144E0089EA47 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +65,88 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2A845E728B0144E0089EA47 /* Weather */ = {
+		D2A845E728B0144E0089EA47 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8460828B0F44A0089EA47 /* Modules */,
+				D2A845FC28B017C60089EA47 /* Application */,
+				D2A8460228B0DBB10089EA47 /* BaseModule */,
+				D2A845FD28B018460089EA47 /* Resources */,
+				D2A845F328B0144E0089EA47 /* LaunchScreen.storyboard */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		D2A845FC28B017C60089EA47 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				D2A845E828B0144E0089EA47 /* AppDelegate.swift */,
-				D2A845EA28B0144E0089EA47 /* SceneDelegate.swift */,
-				D2A845EC28B0144E0089EA47 /* ViewController.swift */,
-				D2A845EE28B0144E0089EA47 /* Main.storyboard */,
-				D2A845F128B0144E0089EA47 /* Assets.xcassets */,
-				D2A845F328B0144E0089EA47 /* LaunchScreen.storyboard */,
 				D2A845F628B0144E0089EA47 /* Info.plist */,
 			);
-			path = Weather;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D2A845FD28B018460089EA47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2A845F128B0144E0089EA47 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2A8460228B0DBB10089EA47 /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8460028B0DBA20089EA47 /* BaseViewController.swift */,
+				D2A8460328B0DC7D0089EA47 /* BaseView.swift */,
+				D2A8460528B0E5E00089EA47 /* BaseViewModel.swift */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		D2A8460828B0F44A0089EA47 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8460928B0F45B0089EA47 /* ProxyLounch */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D2A8460928B0F45B0089EA47 /* ProxyLounch */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8460E28B1001F0089EA47 /* Router */,
+				D2A8460D28B100100089EA47 /* View */,
+				D2A8460C28B0FFF80089EA47 /* ViewModel */,
+				D2A8460A28B0F4C70089EA47 /* ProxyModule.swift */,
+			);
+			path = ProxyLounch;
+			sourceTree = "<group>";
+		};
+		D2A8460C28B0FFF80089EA47 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8460F28B10B670089EA47 /* ProxyLounchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D2A8460D28B100100089EA47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8461328B140DC0089EA47 /* ProxyLaunchController.swift */,
+				D2A8461528B141480089EA47 /* ProxyLaunchControllerView.swift */,
+				D2A8461728B142FF0089EA47 /* ProxyLaunchControllerView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2A8460E28B1001F0089EA47 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8461128B12FC80089EA47 /* ProxyLounchRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +209,7 @@
 			files = (
 				D2A845F528B0144E0089EA47 /* LaunchScreen.storyboard in Resources */,
 				D2A845F228B0144E0089EA47 /* Assets.xcassets in Resources */,
-				D2A845F028B0144E0089EA47 /* Main.storyboard in Resources */,
+				D2A8461828B142FF0089EA47 /* ProxyLaunchControllerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +220,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A845ED28B0144E0089EA47 /* ViewController.swift in Sources */,
+				D2A8461628B141480089EA47 /* ProxyLaunchControllerView.swift in Sources */,
+				D2A8460B28B0F4C70089EA47 /* ProxyModule.swift in Sources */,
+				D2A8460428B0DC7D0089EA47 /* BaseView.swift in Sources */,
+				D2A8461028B10B670089EA47 /* ProxyLounchViewModel.swift in Sources */,
+				D2A8461228B12FC80089EA47 /* ProxyLounchRouter.swift in Sources */,
+				D2A8460628B0E5E00089EA47 /* BaseViewModel.swift in Sources */,
 				D2A845E928B0144E0089EA47 /* AppDelegate.swift in Sources */,
-				D2A845EB28B0144E0089EA47 /* SceneDelegate.swift in Sources */,
+				D2A8460128B0DBA20089EA47 /* BaseViewController.swift in Sources */,
+				D2A8461428B140DC0089EA47 /* ProxyLaunchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2A845EE28B0144E0089EA47 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2A845EF28B0144E0089EA47 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2A845F328B0144E0089EA47 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,12 +367,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8T7N233X3Y;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = Project/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,11 +380,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = VH.Weather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,12 +395,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8T7N233X3Y;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = Project/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,11 +408,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = VH.Weather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
