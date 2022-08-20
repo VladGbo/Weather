@@ -22,6 +22,18 @@
 		D2A8461B28B150E50089EA47 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8461A28B150E50089EA47 /* ActivityIndicatorView.swift */; };
 		D2A8461D28B1554C0089EA47 /* CallBackContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8461C28B1554C0089EA47 /* CallBackContainer.swift */; };
 		D2A8462128B156700089EA47 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8462028B156700089EA47 /* UIView+Extensions.swift */; };
+		D2A8462328B15EAF0089EA47 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8462228B15EAF0089EA47 /* HomeController.swift */; };
+		D2A8462628B15EF80089EA47 /* HomeControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8462528B15EF80089EA47 /* HomeControllerView.swift */; };
+		D2A8462828B15F060089EA47 /* HomeControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A8462728B15F060089EA47 /* HomeControllerView.xib */; };
+		D2A8462D28B15F900089EA47 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8462C28B15F900089EA47 /* HomeRouter.swift */; };
+		D2A8462F28B160C60089EA47 /* HomeVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8462E28B160C60089EA47 /* HomeVIewModel.swift */; };
+		D2A8463128B161490089EA47 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8463028B161490089EA47 /* HomeModule.swift */; };
+		D2A8463428B1623B0089EA47 /* CityModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8463328B1623B0089EA47 /* CityModule.swift */; };
+		D2A8463928B164240089EA47 /* CityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8463828B164240089EA47 /* CityController.swift */; };
+		D2A8463B28B164330089EA47 /* CityControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8463A28B164330089EA47 /* CityControllerView.swift */; };
+		D2A8463D28B1643D0089EA47 /* CityControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A8463C28B1643D0089EA47 /* CityControllerView.xib */; };
+		D2A8463F28B164F50089EA47 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8463E28B164F50089EA47 /* CityViewModel.swift */; };
+		D2A8464128B1653A0089EA47 /* CityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8464028B1653A0089EA47 /* CityRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +54,18 @@
 		D2A8461A28B150E50089EA47 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		D2A8461C28B1554C0089EA47 /* CallBackContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallBackContainer.swift; sourceTree = "<group>"; };
 		D2A8462028B156700089EA47 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D2A8462228B15EAF0089EA47 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D2A8462528B15EF80089EA47 /* HomeControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerView.swift; sourceTree = "<group>"; };
+		D2A8462728B15F060089EA47 /* HomeControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeControllerView.xib; sourceTree = "<group>"; };
+		D2A8462C28B15F900089EA47 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		D2A8462E28B160C60089EA47 /* HomeVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIewModel.swift; sourceTree = "<group>"; };
+		D2A8463028B161490089EA47 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		D2A8463328B1623B0089EA47 /* CityModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModule.swift; sourceTree = "<group>"; };
+		D2A8463828B164240089EA47 /* CityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityController.swift; sourceTree = "<group>"; };
+		D2A8463A28B164330089EA47 /* CityControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityControllerView.swift; sourceTree = "<group>"; };
+		D2A8463C28B1643D0089EA47 /* CityControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityControllerView.xib; sourceTree = "<group>"; };
+		D2A8463E28B164F50089EA47 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		D2A8464028B1653A0089EA47 /* CityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +140,9 @@
 		D2A8460828B0F44A0089EA47 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D2A8463228B161F00089EA47 /* City */,
 				D2A8460928B0F45B0089EA47 /* ProxyLounch */,
+				D2A8462428B15EBA0089EA47 /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -182,6 +208,80 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D2A8462428B15EBA0089EA47 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8462B28B15F5D0089EA47 /* ViewModel */,
+				D2A8462A28B15F510089EA47 /* Router */,
+				D2A8462928B15F3C0089EA47 /* View */,
+				D2A8463028B161490089EA47 /* HomeModule.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D2A8462928B15F3C0089EA47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8462728B15F060089EA47 /* HomeControllerView.xib */,
+				D2A8462528B15EF80089EA47 /* HomeControllerView.swift */,
+				D2A8462228B15EAF0089EA47 /* HomeController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2A8462A28B15F510089EA47 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8462C28B15F900089EA47 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D2A8462B28B15F5D0089EA47 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8462E28B160C60089EA47 /* HomeVIewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D2A8463228B161F00089EA47 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8463728B163FD0089EA47 /* ViewModel */,
+				D2A8463628B163F30089EA47 /* Router */,
+				D2A8463528B163EC0089EA47 /* View */,
+				D2A8463328B1623B0089EA47 /* CityModule.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		D2A8463528B163EC0089EA47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8463828B164240089EA47 /* CityController.swift */,
+				D2A8463A28B164330089EA47 /* CityControllerView.swift */,
+				D2A8463C28B1643D0089EA47 /* CityControllerView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2A8463628B163F30089EA47 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8464028B1653A0089EA47 /* CityRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D2A8463728B163FD0089EA47 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8463E28B164F50089EA47 /* CityViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,8 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A845F528B0144E0089EA47 /* LaunchScreen.storyboard in Resources */,
+				D2A8463D28B1643D0089EA47 /* CityControllerView.xib in Resources */,
 				D2A845F228B0144E0089EA47 /* Assets.xcassets in Resources */,
 				D2A8461828B142FF0089EA47 /* ProxyLaunchControllerView.xib in Resources */,
+				D2A8462828B15F060089EA47 /* HomeControllerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,14 +358,24 @@
 				D2A8461628B141480089EA47 /* ProxyLaunchControllerView.swift in Sources */,
 				D2A8461B28B150E50089EA47 /* ActivityIndicatorView.swift in Sources */,
 				D2A8460B28B0F4C70089EA47 /* ProxyModule.swift in Sources */,
+				D2A8462F28B160C60089EA47 /* HomeVIewModel.swift in Sources */,
 				D2A8460428B0DC7D0089EA47 /* BaseView.swift in Sources */,
+				D2A8462D28B15F900089EA47 /* HomeRouter.swift in Sources */,
 				D2A8461D28B1554C0089EA47 /* CallBackContainer.swift in Sources */,
+				D2A8464128B1653A0089EA47 /* CityRouter.swift in Sources */,
 				D2A8461028B10B670089EA47 /* ProxyLounchViewModel.swift in Sources */,
+				D2A8462328B15EAF0089EA47 /* HomeController.swift in Sources */,
+				D2A8462628B15EF80089EA47 /* HomeControllerView.swift in Sources */,
+				D2A8463428B1623B0089EA47 /* CityModule.swift in Sources */,
 				D2A8462128B156700089EA47 /* UIView+Extensions.swift in Sources */,
+				D2A8463928B164240089EA47 /* CityController.swift in Sources */,
 				D2A8461228B12FC80089EA47 /* ProxyLounchRouter.swift in Sources */,
 				D2A8460628B0E5E00089EA47 /* BaseViewModel.swift in Sources */,
+				D2A8463B28B164330089EA47 /* CityControllerView.swift in Sources */,
+				D2A8463128B161490089EA47 /* HomeModule.swift in Sources */,
 				D2A845E928B0144E0089EA47 /* AppDelegate.swift in Sources */,
 				D2A8460128B0DBA20089EA47 /* BaseViewController.swift in Sources */,
+				D2A8463F28B164F50089EA47 /* CityViewModel.swift in Sources */,
 				D2A8461428B140DC0089EA47 /* ProxyLaunchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,7 +512,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -428,7 +539,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
