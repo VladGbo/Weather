@@ -11,7 +11,7 @@ class BaseViewController<ViewType: BaseView, ViewModelType>: UIViewController {
   
   // MARK: - Properties
   
-  let viewModel: ViewModelType
+  var viewModel: ViewModelType
   let contentView: ViewType
   
   // MARK: - Init

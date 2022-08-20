@@ -9,4 +9,7 @@ import UIKit
 
 final class ProxyLaunchControllerView: BaseView {
   
+  // MARK: - Outlets
+  
+  @IBOutlet weak var activityIndicatorView: UIView!
 }
