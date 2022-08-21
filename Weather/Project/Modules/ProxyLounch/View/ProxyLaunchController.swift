@@ -27,7 +27,7 @@ final class ProxyLaunchController: BaseViewController<ProxyLaunchControllerView,
   private func configure() {
     let `view` = contentView
     
-    activityIndicator = view.activityIndicatorView.addActivityIndicatorView(bgColor: .clear)
+    activityIndicator = view.activityIndicatorView.addActivityIndicatorView(bgColor: .black)
     activityIndicator?.isHidden = true
     
     viewModel.activateIndicatorCallBack = { [weak activityIndicator] isOn in

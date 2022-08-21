@@ -7,6 +7,6 @@
 
 import UIKit
 
-final class CityController: BaseViewController<CityControllerView, CityRoutes> {
+final class CityController: BaseViewController<CityControllerView, CityViewModelProtocol> {
   
 }

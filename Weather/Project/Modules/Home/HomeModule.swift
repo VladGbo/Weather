@@ -13,6 +13,7 @@ final class HomeModule {
   
   let viewController: UIViewController
   let viewModel: HomeViewModel
+  
   private let router: HomeRouter
   
   // MARK: - Init

@@ -22,8 +22,9 @@ final class ProxyLounchViewModel: BaseViewModel<ProxyLounchRouter>, ProxyLounchV
   func initiate() {
     activateIndicatorCallBack?(true)
     
-    DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
       self?.activateIndicatorCallBack?(false)
+      self?.router.openHome()
     }
   }
 }

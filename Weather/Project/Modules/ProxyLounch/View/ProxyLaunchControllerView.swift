@@ -11,5 +11,5 @@ final class ProxyLaunchControllerView: BaseView {
   
   // MARK: - Outlets
   
-  @IBOutlet weak var activityIndicatorView: UIView!
+  @IBOutlet private(set) weak var activityIndicatorView: UIView!
 }

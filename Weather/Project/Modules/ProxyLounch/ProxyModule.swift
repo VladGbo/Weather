@@ -13,6 +13,7 @@ final class ProxyModule {
   
   let viewController: UIViewController
   let viewModel: ProxyLounchViewModel
+  
   private let router: ProxyLounchRouter
   
   // MARK: - Init

@@ -6,3 +6,4 @@
 //
 
 typealias SwitchCallBack = (Bool) -> Void
+typealias VoidCallBack = () -> Void

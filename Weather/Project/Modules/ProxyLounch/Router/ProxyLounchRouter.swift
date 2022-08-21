@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ProxyLounchRoutes: Router {
-  
+  func openHome()
 }
 
 final class ProxyLounchRouter: ProxyLounchRoutes {
@@ -21,5 +21,14 @@ final class ProxyLounchRouter: ProxyLounchRoutes {
   
   func setViewController(_ vc: UIViewController) {
     self.vc = vc
+  }
+  
+  func openHome() {
+    let homeController = HomeModule().viewController
+    let navController = UINavigationController.noNavBarController()
+    navController.viewControllers = [homeController]
+    navController.modalPresentationStyle = .overFullScreen
+    navController.modalTransitionStyle = .flipHorizontal
+    vc?.present(navController, animated: true)
   }
 }

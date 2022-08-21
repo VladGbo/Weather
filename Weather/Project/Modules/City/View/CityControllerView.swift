@@ -9,4 +9,10 @@ import UIKit
 
 final class CityControllerView: BaseView {
   
+  // MARK: - Outlets
+  
+  @IBOutlet private(set) weak var backButton: UIButton!
+  @IBOutlet private(set) weak var titleLabel: UILabel!
+  @IBOutlet private(set) weak var tableView: UITableView!
+  
 }

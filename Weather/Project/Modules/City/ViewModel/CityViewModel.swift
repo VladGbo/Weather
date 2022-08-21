@@ -13,4 +13,17 @@ protocol CityViewModelProtocol {
 
 final class CityViewModel: BaseViewModel<CityRouter>, CityViewModelProtocol {
   
+  // MARK: - Properties
+  
+  private let city: City
+  
+  // MARK: - Init
+  
+  init(router: CityRouter, city: City) {
+    self.city = city
+    
+    super.init(router: router)
+  }
+  
+  
 }

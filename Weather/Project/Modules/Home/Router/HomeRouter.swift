@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeRoutes: Router {
-  
+  func openCity(_ city: City)
 }
 
 final class HomeRouter: HomeRoutes {
@@ -21,5 +21,15 @@ final class HomeRouter: HomeRoutes {
   
   func setViewController(_ vc: UIViewController) {
     self.vc = vc
+  }
+  
+  func openCity(_ city: City) {
+    let module = CityModule(city: city)
+    let cityController = module.viewController
+    
+    vc?.navigationController?.pushViewController(
+      cityController,
+      animated: true
+    )
   }
 }
