@@ -57,7 +57,7 @@ playground.xcworkspace
 # Pods/
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
+*.xcworkspace
 
 # Carthage
 #
@@ -88,3 +88,63 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+Weather/Pods/Manifest.lock
+Weather/Pods/Alamofire/LICENSE
+Weather/Pods/Alamofire/README.md
+Weather/Pods/Alamofire/Source/AFError.swift
+Weather/Pods/Alamofire/Source/Alamofire.swift
+Weather/Pods/Alamofire/Source/AlamofireExtended.swift
+Weather/Pods/Alamofire/Source/AuthenticationInterceptor.swift
+Weather/Pods/Alamofire/Source/CachedResponseHandler.swift
+Weather/Pods/Alamofire/Source/Combine.swift
+Weather/Pods/Alamofire/Source/Concurrency.swift
+Weather/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+Weather/Pods/Alamofire/Source/EventMonitor.swift
+Weather/Pods/Alamofire/Source/HTTPHeaders.swift
+Weather/Pods/Alamofire/Source/HTTPMethod.swift
+Weather/Pods/Alamofire/Source/MultipartFormData.swift
+Weather/Pods/Alamofire/Source/MultipartUpload.swift
+Weather/Pods/Alamofire/Source/NetworkReachabilityManager.swift
+Weather/Pods/Alamofire/Source/Notifications.swift
+Weather/Pods/Alamofire/Source/OperationQueue+Alamofire.swift
+Weather/Pods/Alamofire/Source/ParameterEncoder.swift
+Weather/Pods/Alamofire/Source/ParameterEncoding.swift
+Weather/Pods/Alamofire/Source/Protected.swift
+Weather/Pods/Alamofire/Source/RedirectHandler.swift
+Weather/Pods/Alamofire/Source/Request.swift
+Weather/Pods/Alamofire/Source/RequestInterceptor.swift
+Weather/Pods/Alamofire/Source/RequestTaskMap.swift
+Weather/Pods/Alamofire/Source/Response.swift
+Weather/Pods/Alamofire/Source/ResponseSerialization.swift
+Weather/Pods/Alamofire/Source/Result+Alamofire.swift
+Weather/Pods/Alamofire/Source/RetryPolicy.swift
+Weather/Pods/Alamofire/Source/ServerTrustEvaluation.swift
+Weather/Pods/Alamofire/Source/Session.swift
+Weather/Pods/Alamofire/Source/SessionDelegate.swift
+Weather/Pods/Alamofire/Source/StringEncoding+Alamofire.swift
+Weather/Pods/Alamofire/Source/URLConvertible+URLRequestConvertible.swift
+Weather/Pods/Alamofire/Source/URLEncodedFormEncoder.swift
+Weather/Pods/Alamofire/Source/URLRequest+Alamofire.swift
+Weather/Pods/Alamofire/Source/URLSessionConfiguration+Alamofire.swift
+Weather/Pods/Alamofire/Source/Validation.swift
+Weather/Pods/Pods.xcodeproj/project.pbxproj
+Weather/Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+Weather/Pods/Target Support Files/Alamofire/Alamofire-Info.plist
+Weather/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+Weather/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+Weather/Pods/Target Support Files/Alamofire/Alamofire.debug.xcconfig
+Weather/Pods/Target Support Files/Alamofire/Alamofire.modulemap
+Weather/Pods/Target Support Files/Alamofire/Alamofire.release.xcconfig
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-acknowledgements.markdown
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-acknowledgements.plist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-dummy.m
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks-Debug-input-files.xcfilelist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks-Debug-output-files.xcfilelist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks-Release-input-files.xcfilelist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks-Release-output-files.xcfilelist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks.sh
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-Info.plist
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather-umbrella.h
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather.modulemap
+Weather/Pods/Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig
