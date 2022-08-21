@@ -89,7 +89,9 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     
     guard let cell = tableView.dequeueReusableCell(
       withIdentifier: CityTableViewCell.nibName()
-    ) as? CityTableViewCell else { fatalError("Not expectable type of cell") }
+    ) as? CityTableViewCell else {
+      fatalError("Not expectable type of cell")
+    }
     
     let model = viewModel.dataSource[indexPath.row]
     

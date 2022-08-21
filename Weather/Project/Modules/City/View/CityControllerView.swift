@@ -14,5 +14,6 @@ final class CityControllerView: BaseView {
   @IBOutlet private(set) weak var backButton: UIButton!
   @IBOutlet private(set) weak var titleLabel: UILabel!
   @IBOutlet private(set) weak var tableView: UITableView!
+  @IBOutlet private(set) weak var activivtyIndicatorView: UIView!
   
 }

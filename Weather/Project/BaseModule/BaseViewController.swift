@@ -35,6 +35,20 @@ class BaseViewController<ViewType: BaseView, ViewModelType>: UIViewController {
     view = contentView
   }
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    navigationController?.interactivePopGestureRecognizer?.delegate = nil
+  }
+  
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    .darkContent
+  }
+  
+  override var shouldAutorotate: Bool {
+    false
+  }
+  
   // MARK: - Open functions
   
   func addChild(_ childController: UIViewController, to container: UIView) {

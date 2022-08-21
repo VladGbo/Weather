@@ -12,6 +12,7 @@ protocol WeatherCellProtocol {
   var dateString: String { get }
   var description: String? { get }
   var temperature: String { get }
+  var height: Float { get }
 }
 
 final class WeatherCellViewModel: WeatherCellProtocol {
@@ -32,6 +33,10 @@ final class WeatherCellViewModel: WeatherCellProtocol {
   
   var temperature: String {
     temperatureString()
+  }
+  
+  var height: Float {
+    100.0
   }
   
   private var weather: Weather?
