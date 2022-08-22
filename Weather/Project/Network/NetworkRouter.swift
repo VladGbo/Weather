@@ -5,7 +5,6 @@
 //  Created by Vladyslav Horbenko on 22.08.2022.
 //
 
-import Foundation
 import Alamofire
 
 enum NetworResult<T: Decodable> {
@@ -25,7 +24,7 @@ class NetworkRouter {
       route.fullPath,
       method: route.method,
       parameters: route.parameters,
-      encoding: JSONEncoding.default,
+      encoding: route.parameterEncoding,
       headers: route.headers
     )
     

@@ -43,7 +43,7 @@ final class WeatherCellViewModel: WeatherCellProtocol {
   private let unixDate: Double
   private let minTemp: Double
   private let maxTemp: Double
-  private var isNeedCelsius = false
+  private var isNeedCelsius = true
   
   // MARK: - Init
   
@@ -69,15 +69,15 @@ final class WeatherCellViewModel: WeatherCellProtocol {
   }
   
   private func temperatureString() -> String {
-    "from: \(calculateCelsiusIfMeed(index: minTemp)) to: \(calculateCelsiusIfMeed(index: maxTemp))"
+    "min: \(calculateCelsiusIfMeed(index: minTemp)) max: \(calculateCelsiusIfMeed(index: maxTemp))"
   }
   
-  private func calculateCelsiusIfMeed(index: Double) -> Double {
+  private func calculateCelsiusIfMeed(index: Double) -> Int {
     guard isNeedCelsius == true else {
-      return index
+      return Int(index)
     }
     
-    return index - 273.15
+    return Int(index - 273.15)
   }
 }
 

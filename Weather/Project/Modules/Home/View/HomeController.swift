@@ -24,6 +24,8 @@ final class HomeController: BaseViewController<HomeControllerView, HomeViewModel
     
     view.tableView.delegate = self
     view.tableView.dataSource = self
+    view.tableView.separatorStyle = .none
+    
     view.tableView.register(
       CityTableViewCell.nib(),
       forCellReuseIdentifier: CityTableViewCell.nibName()

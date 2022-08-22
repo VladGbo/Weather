@@ -33,6 +33,14 @@ enum EndPoint {
     }
   }
   
+  var parameterEncoding: ParameterEncoding {
+    switch self {
+    case .currentWeather,
+        .historyWeather:
+      return URLEncoding(destination: .queryString)
+    }
+  }
+  
   var fullPath: String {
     switch self {
     case .currentWeather:

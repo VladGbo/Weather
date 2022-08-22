@@ -31,6 +31,8 @@ final class CityController: BaseViewController<CityControllerView, CityViewModel
     view.titleLabel.text = viewModel.country
     view.tableView.delegate = self
     view.tableView.dataSource = self
+    view.tableView.separatorStyle = .none
+    
     view.tableView.register(
       WeatherTableViewCell.nib(),
       forCellReuseIdentifier: WeatherTableViewCell.nibName()
@@ -45,6 +47,9 @@ final class CityController: BaseViewController<CityControllerView, CityViewModel
     viewModel.animateActivityCallBack = { [weak activityIndicator] isOn in
       
       DispatchQueue.main.async {
+        
+        view.activivtyIndicatorView.isHidden = !isOn
+        
         isOn ?
         activityIndicator?.startAnimating() :
         activityIndicator?.stopAnimating()
@@ -56,6 +61,8 @@ final class CityController: BaseViewController<CityControllerView, CityViewModel
         view.tableView.reloadData()
       }
     }
+    
+    viewModel.updateWeather()
   }
   
   @objc

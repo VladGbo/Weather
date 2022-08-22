@@ -12,6 +12,8 @@ protocol CityViewModelProtocol {
   var animateActivityCallBack: SwitchCallBack? { get set }
   var updateTableCallBack: VoidCallBack? { get set }
   var datasurce: [WeatherCellProtocol] { get }
+  
+  func updateWeather()
 }
 
 final class CityViewModel: BaseViewModel<CityRouter>, CityViewModelProtocol {
@@ -38,5 +40,31 @@ final class CityViewModel: BaseViewModel<CityRouter>, CityViewModelProtocol {
     self.city = city
     
     super.init(router: router)
+  }
+  
+  // MARK: - Open functions
+  
+  func updateWeather() {
+    
+    let response: ((NetworResult<HistoryWeather>) -> Void) = { [weak self] response in
+      self?.animateActivityCallBack?(false)
+      
+      guard let `self` = self else { return }
+      
+      switch response {
+      case .error(error: let text):
+        print(text)
+      case .succes(object: let object):
+        let weather = object.list
+        self.weatherModels = weather.map({ WeatherCellViewModel(weatherItem: $0) })
+        self.updateTableCallBack?()
+      }
+    }
+    
+    animateActivityCallBack?(true)
+    NetworkRouter.request(
+      route: .historyWeather(lat: city.coord.lat, lon: city.coord.lon),
+      completion: response
+    )
   }
 }
