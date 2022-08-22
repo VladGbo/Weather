@@ -29,7 +29,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="viT-mb-2kQ">
                                 <rect key="frame" x="55" y="5" width="228" height="61.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQ8-JE-XQA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQ8-JE-XQA">
                                         <rect key="frame" x="0.0" y="0.0" width="228" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -41,7 +41,7 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqt-YT-kMQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqt-YT-kMQ">
                                         <rect key="frame" x="0.0" y="41" width="228" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,15 +68,23 @@
                             <action selector="onCell:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QZE-QP-ixC"/>
                         </connections>
                     </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pok-ET-QfT" userLabel="ActivityIndicatorView">
+                        <rect key="frame" x="16" y="5" width="288" height="70"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="HUW-fh-rj6" secondAttribute="trailing" id="4yO-2f-mRC"/>
+                    <constraint firstAttribute="bottom" secondItem="Pok-ET-QfT" secondAttribute="bottom" constant="5" id="7j3-0d-3uZ"/>
                     <constraint firstItem="nMO-V0-ObX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="FeU-Fs-ZvX"/>
+                    <constraint firstItem="Pok-ET-QfT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="JIv-Fy-ERE"/>
+                    <constraint firstItem="Pok-ET-QfT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WmW-SC-0Lf"/>
                     <constraint firstItem="HUW-fh-rj6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Yye-ik-Pwt"/>
                     <constraint firstAttribute="bottom" secondItem="HUW-fh-rj6" secondAttribute="bottom" id="bYj-vr-YxH"/>
                     <constraint firstAttribute="bottom" secondItem="nMO-V0-ObX" secondAttribute="bottom" constant="5" id="fJJ-GC-uai"/>
                     <constraint firstAttribute="trailing" secondItem="nMO-V0-ObX" secondAttribute="trailing" constant="16" id="hrf-5i-EaR"/>
+                    <constraint firstAttribute="trailing" secondItem="Pok-ET-QfT" secondAttribute="trailing" constant="16" id="lf2-YI-SRa"/>
                     <constraint firstItem="nMO-V0-ObX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="nDN-1K-okY"/>
                     <constraint firstItem="HUW-fh-rj6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qDI-SQ-UJe"/>
                 </constraints>
@@ -84,13 +92,14 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="activityIndicatorView" destination="Pok-ET-QfT" id="8hd-Cv-WPs"/>
                 <outlet property="containerView" destination="nMO-V0-ObX" id="Ua7-rO-aR7"/>
                 <outlet property="countryLabel" destination="yQ8-JE-XQA" id="23b-2b-91Y"/>
                 <outlet property="descriptionLabel" destination="BBR-PV-tpH" id="w0W-tb-eZh"/>
                 <outlet property="temperatureLabel" destination="aqt-YT-kMQ" id="t0d-oB-ZRe"/>
                 <outlet property="weatherImageView" destination="AYq-05-lCd" id="CYc-XV-zal"/>
             </connections>
-            <point key="canvasLocation" x="139" y="106"/>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
         </tableViewCell>
     </objects>
 </document>

@@ -30,11 +30,16 @@ protocol CityTableViewCellProtocol {
   var temperature: String? { get }
   var height: Float { get }
   var onCellCallBack: ((City) -> Void)? { get set }
+  var animateActivityCallBack: SwitchCallBack? { get set }
+  var updateUICallBack: VoidCallBack? { get set }
   
   func didTapOnCell()
+  func featchWeather()
 }
 
 final class CityTableViewCellViewModel: CityTableViewCellProtocol {
+  
+  
   
   // MARK: - Properties
   
@@ -47,7 +52,7 @@ final class CityTableViewCellViewModel: CityTableViewCellProtocol {
   }
   
   var description: String? {
-    weatherTemperature
+    weatherDescription
   }
   
   var temperature: String? {
@@ -59,6 +64,8 @@ final class CityTableViewCellViewModel: CityTableViewCellProtocol {
   }
   
   var onCellCallBack: ((City) -> Void)?
+  var animateActivityCallBack: SwitchCallBack?
+  var updateUICallBack: VoidCallBack?
   
   private let city: City
   private var weatherImage: UIImage? = nil
@@ -76,6 +83,38 @@ final class CityTableViewCellViewModel: CityTableViewCellProtocol {
   func didTapOnCell() {
     onCellCallBack?(city)
   }
+  
+  func featchWeather() {
+    
+    let response: ((NetworResult<CurrentWeather>) -> Void) = { [weak self] response in
+      self?.animateActivityCallBack?(false)
+      
+      guard let `self` = self else { return }
+      
+      switch response {
+      case .error(error: let text):
+        print(text)
+      case .succes(object: let object):
+        self.weatherImage = object.weather.first?.weatherImage()
+        self.weatherDescription = object.weather.first?.description
+        self.weatherTemperature = "min: \(self.calculateCelsius(index: object.main.tempMin)) max: \(self.calculateCelsius(index: object.main.tempMax))"
+        
+        self.updateUICallBack?()
+      }
+    }
+    
+    animateActivityCallBack?(true)
+    NetworkRouter.request(
+      route: .currentWeather(lat: city.coord.lat, lon: city.coord.lon),
+      completion: response
+    )
+  }
+  
+  // MARK: - Private functions
+  
+  private func calculateCelsius(index: Double) -> Int {
+    Int(index - 273.15)
+  }
 }
 
 final class CityTableViewCell: UITableViewCell, CellProtocol {
@@ -87,10 +126,12 @@ final class CityTableViewCell: UITableViewCell, CellProtocol {
   @IBOutlet private weak var countryLabel: UILabel!
   @IBOutlet private weak var descriptionLabel: UILabel!
   @IBOutlet private weak var temperatureLabel: UILabel!
+  @IBOutlet private weak var activityIndicatorView: UIView!
   
   // MARK: - Properties
   
   private var model: CityTableViewCellProtocol!
+  private var activityIndicator: ActivityIndicatorView?
   
   // MARK: - LifeCycle
   
@@ -104,12 +145,32 @@ final class CityTableViewCell: UITableViewCell, CellProtocol {
   
   func setup(with model: CityTableViewCellProtocol) {
     var mutableModel = model
+    
+    mutableModel.animateActivityCallBack = { [weak self] isOn in
+      guard let `self` = self else { return }
+      
+      DispatchQueue.main.async {
+        
+        self.activityIndicatorView.isHidden = !isOn
+        
+        isOn ?
+        self.activityIndicator?.startAnimating() :
+        self.activityIndicator?.stopAnimating()
+      }
+    }
+    
+    mutableModel.updateUICallBack = { [weak self] in
+      guard let `self` = self else { return }
+      
+      DispatchQueue.main.async {
+        self.updateUI()
+      }
+    }
+    
     self.model = mutableModel
     
-    weatherImageView.image = mutableModel.image
-    countryLabel.text = mutableModel.country
-    descriptionLabel.text = mutableModel.description
-    temperatureLabel.text = mutableModel.temperature
+    updateUI()
+    model.featchWeather()
   }
   
   // MARK: - Action
@@ -120,8 +181,17 @@ final class CityTableViewCell: UITableViewCell, CellProtocol {
   
   // MARK: - Private functions
   
+  private func updateUI() {
+    weatherImageView.image = model.image
+    countryLabel.text = model.country
+    descriptionLabel.text = model.description
+    temperatureLabel.text = model.temperature
+  }
+  
   private func configure() {
     selectionStyle = .none
+    activityIndicator = activityIndicatorView.addActivityIndicatorView(bgColor: .clear)
+    activityIndicatorView.isHidden = true
     makeBorder()
   }
   
